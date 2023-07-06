@@ -4,10 +4,10 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-virtualenv = "==20.23.1"
 fastapi = "==0.99.1"
 openai = "==0.27.8"
 langchain = "==0.0.225"
+python-dotenv = "==1.0.0"
 
 [dev-packages]
 
