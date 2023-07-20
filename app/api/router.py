@@ -1,7 +1,7 @@
 from fastapi import APIRouter 
 
-from app.api.controller.search import search
-from app.api.controller.root import root
+from api.controller.search import search
+from api.controller.root import root
 
 # cs stands for chroma-search
 cs_router = APIRouter()
