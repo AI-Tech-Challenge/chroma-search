@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 import uvicorn
 
-from api.router import cs_router
+from app.api.router import cs_router
 
 app = FastAPI()
 
