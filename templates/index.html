@@ -17,11 +17,13 @@
             <div class="search">
                 <h1>What is the hex code for...</h1>
                 <form action="/" method="POST">
-                    <input type="text" name="user_input" id="input-bar" autofocus>
+                    <input type="text" name="user_input" id="input-bar" autofocus required>
                 </form>
             </div>
             <div class="result">
-                <h2>{{ user_input }}</h2>
+                <h2>
+                    {{ user_input }}
+                </h2>
             </div>
         </div>
     </div>
