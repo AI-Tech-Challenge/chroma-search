@@ -12,10 +12,22 @@
     <div id="header">
         <h1>Chroma Search</h1>
     </div>
-    <div class="content">
-        <div class="search">
-            <h1>What is the hex code for...</h1>
-            <input type="text" id="input-bar" autofocus>
+    <div class="page-content">
+        <div class="content">
+            <div class="search">
+                <h1>What is the hex code for...</h1>
+                <form action="/" method="POST">
+                    <input type="text" name="user_input" id="input-bar" maxlength=40 autofocus required>
+                </form>
+            </div>
+            {% if user_input %}
+                <h1>Here are three potential hex codes:</h1>
+                <div class="results">
+                    {% for hexcode in user_input %}
+                        {% include '_result.html' %}
+                    {% endfor %}
+                </div>
+            {% endif %}
         </div>
     </div>
 </body>
