@@ -51,3 +51,34 @@ body {
 
 #input-bar:focus { outline: none }
 
+.results {
+    display: flex;
+    justify-content: space-between;
+}
+
+.result { box-sizing: border-box; }
+
+.hexcode-text {
+    text-shadow: 1px 1px 2px black;
+}
+
+.color-box {
+    box-sizing: border-box;
+    width: 12vw;
+    height: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px
+}
+
+.copy-button {
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.copy-button:hover {
+    cursor: pointer;
+}
